@@ -1,0 +1,60 @@
+.social {
+    display: flex;
+    align-items: center;
+
+    &__sep {
+        width: 4px;
+        height: 4px;
+        background-color: @red;
+        margin: 0 30px;
+    }
+
+    &__item {
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        
+        &:last-child {
+
+            &::before {
+                display: none;
+            }
+        }
+        .svg-icon {
+            use {
+                fill: #A3A3A3;
+                transition: fill 0.3s ease;
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    .social {
+        &__item {
+            &:hover {
+                .svg-icon {
+                    use {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 420px) {
+    .social {
+        width: 100%;
+        justify-content: space-between;
+
+        &__item {
+            margin-right: 0;
+        }
+
+        &__sep {
+            margin: 0;
+        }
+    }
+}
