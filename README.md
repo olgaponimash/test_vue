@@ -7,3 +7,6 @@ npm run build - сборка проекта
 npm - 9.5.1
 
 Netify https://capable-malabi-8f2a3e.netlify.app/
+
+
+Дополнительное задание https://codepen.io/HelgaCode/pen/rNPzWyP?editors=1111
